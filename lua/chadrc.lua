@@ -5,8 +5,8 @@
 local M = {}
 
 M.ui = {
-	theme = "onedark",
-
+	theme = "vscode_dark",
+  telescope = { style = 'bordered'},
 	-- hl_override = {
 	-- 	Comment = { italic = true },
 	-- 	["@comment"] = { italic = true },
