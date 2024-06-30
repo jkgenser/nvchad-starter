@@ -1,4 +1,9 @@
 def main():
-    pass
+    foo('hello')
 
+def foo(x: str):
+    print(x)
+
+if __name__ == '__main__':
+    main()
 
