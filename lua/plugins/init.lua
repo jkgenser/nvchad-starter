@@ -26,18 +26,23 @@ return {
         "css-lsp",
         "prettier",
         "pyright",
+        "basedpyright",
       },
     },
   },
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {
+      highlight = { enable = true },
+      indent = { enable = true },
       ensure_installed = {
         "vim",
         "lua",
         "vimdoc",
         "html",
         "css",
+        "python",
+        "typescript",
       },
     },
   },

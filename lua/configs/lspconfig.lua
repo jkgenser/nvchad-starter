@@ -1,4 +1,4 @@
--- EXAMPLE 
+-- EXAMPLE
 local on_attach = require("nvchad.configs.lspconfig").on_attach
 local on_init = require("nvchad.configs.lspconfig").on_init
 local capabilities = require("nvchad.configs.lspconfig").capabilities
@@ -22,10 +22,19 @@ lspconfig.tsserver.setup {
   capabilities = capabilities,
 }
 
+lspconfig.basedpyright.setup {
+  enabled = true,
+  settings = {
+    basedpyright = {
+      disableOrganizeImports = true,
+      typeCheckingMode = "on",
+    },
+  },
+}
 
-lspconfig.pyright.setup({
-  on_attach = on_attach,
-  on_init = on_init,
-  capabilities = capabilities,
-  filetypes = {"python"}
-})
+-- lspconfig.pyright.setup({
+--   on_attach = on_attach,
+--   on_init = on_init,
+--   capabilities = capabilities,
+--   filetypes = {"python"}
+-- })
