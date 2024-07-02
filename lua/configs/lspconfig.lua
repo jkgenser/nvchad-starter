@@ -27,7 +27,7 @@ lspconfig.basedpyright.setup {
   settings = {
     basedpyright = {
       disableOrganizeImports = true,
-      typeCheckingMode = "on",
+      -- typeCheckingMode = "on",
     },
   },
 }
